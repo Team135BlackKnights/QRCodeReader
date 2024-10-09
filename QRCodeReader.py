@@ -58,11 +58,11 @@ def save_qr_data(qr_data):
     if event_key == "":
         messagebox.showerror("Error", f"FIRST SET EVENT KEY IN SETTINGS!")
         return
-    usb_drive_path = f'E:/data/{file_name}'
+    usb_drive_path = f'D:/data/{file_name}'
     documents_path = f'QRCodeOutputs/{file_name}'
     override = False
     # Check if USB drive is available
-    if os.path.exists('E:/'):
+    if os.path.exists('D:/'):
         file_path = usb_drive_path
     else:
         override = True
@@ -86,7 +86,7 @@ def open_qrcode_folder():
 
 
 def open_usb_folder():
-    usb_drive_path = 'E:/data'
+    usb_drive_path = 'D:/data'
     if not os.path.exists(usb_drive_path):
         messagebox.showerror("Error", "USB drive not found.")
         return
@@ -96,7 +96,7 @@ def open_usb_folder():
 
 def move_local_data_to_usb():
     """Move files from the local data path to the USB drive, avoiding duplicates."""
-    usb_drive_path = 'E:/data'
+    usb_drive_path = 'D:/data'
     local_data_path = 'QRCodeOutputs'
 
     if not os.path.exists(usb_drive_path):
@@ -176,7 +176,7 @@ def update_frame():
 
 def check_usb_drive():
     """Check if USB drive is available and update the checkbox state."""
-    if os.path.exists('E:/'):
+    if os.path.exists('D:/'):
         usb_drive_checkbox.config(text="USB Drive Available",bg='green')  # Green if USB drive is present
     else:
         usb_drive_checkbox.config(text="USB Drive Unavailable",bg='red')  # Red if USB drive is not present

@@ -86,7 +86,7 @@ def open_qrcode_folder():
 
 
 def open_usb_folder():
-    usb_drive_path = 'D:/data'
+    usb_drive_path = 'E:/data'
     if not os.path.exists(usb_drive_path):
         messagebox.showerror("Error", "USB drive not found.")
         return

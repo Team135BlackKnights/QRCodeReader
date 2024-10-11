@@ -58,11 +58,11 @@ def save_qr_data(qr_data):
     if event_key == "":
         messagebox.showerror("Error", f"FIRST SET EVENT KEY IN SETTINGS!")
         return
-    usb_drive_path = f'D:/data/{file_name}'
+    usb_drive_path = f'E:/data/{file_name}'
     documents_path = f'QRCodeOutputs/{file_name}'
     override = False
     # Check if USB drive is available
-    if os.path.exists('D:/'):
+    if os.path.exists('E:/'):
         file_path = usb_drive_path
     else:
         override = True
@@ -96,7 +96,7 @@ def open_usb_folder():
 
 def move_local_data_to_usb():
     """Move files from the local data path to the USB drive, avoiding duplicates."""
-    usb_drive_path = 'D:/data'
+    usb_drive_path = 'E:/data'
     local_data_path = 'QRCodeOutputs'
 
     if not os.path.exists(usb_drive_path):
@@ -176,7 +176,7 @@ def update_frame():
 
 def check_usb_drive():
     """Check if USB drive is available and update the checkbox state."""
-    if os.path.exists('D:/'):
+    if os.path.exists('E:/'):
         usb_drive_checkbox.config(text="USB Drive Available",bg='green')  # Green if USB drive is present
     else:
         usb_drive_checkbox.config(text="USB Drive Unavailable",bg='red')  # Red if USB drive is not present
@@ -220,15 +220,15 @@ def main():
 
     # Open the webcam
     cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
     current_qr_data = None
 
     # Create the main window
     root = tk.Tk()
     root.title("QR Code Reader")
-    root.geometry("1920x1080")
-    canvas = tk.Canvas(root, width=1920, height=1080)
+    root.geometry("1280x720")
+    canvas = tk.Canvas(root, width=1280, height=720)
     canvas.pack(fill=tk.BOTH, expand=True)
     # Initialize fullscreen mode
     fullscreen = True
@@ -237,20 +237,20 @@ def main():
     root.bind('<Escape>', end_fullscreen)
     # Create a button to open settings
     settings_button = tk.Button(root, text="Settings", command=open_settings)
-    settings_button.place(x=10, y=980, anchor='sw')
+    settings_button.place(x=10, y=800, anchor='sw')
 
     # Create a checkbox to show USB drive status
     usb_drive_checkbox = tk.Label(root, text="USB Drive Unavailable", width=20, height=2, bg="red", fg='white')
-    usb_drive_checkbox.place(x=10, y=940, anchor='sw')
+    usb_drive_checkbox.place(x=10, y=760, anchor='sw')
 
     # Create a button to open the QRCodeOutputs folder
     open_folder_button = tk.Button(root, text="Open QR Code Outputs Folder", command=open_qrcode_folder)
-    open_folder_button.place(x=10, y=900, anchor='sw')
+    open_folder_button.place(x=10, y=720, anchor='sw')
     open_usb_button = tk.Button(root, text="Open USB Drive", command=open_usb_folder)
-    open_usb_button.place(x=10, y=860, anchor='sw')
+    open_usb_button.place(x=10, y=680, anchor='sw')
     # Create a button to move local data to USB
     move_data_button = tk.Button(root, text="Move Local Data To USB", command=move_local_data_to_usb)
-    move_data_button.place(x=10, y=820, anchor='sw')
+    move_data_button.place(x=10, y=640, anchor='sw')
 
     update_frame()
 

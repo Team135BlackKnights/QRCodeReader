@@ -12,14 +12,29 @@ import shutil
 # Global variable for event_key
 event_key = ""
 file_name = ""
+event_key_file = "event_key.txt"  # File to store the event_key
 
+def load_event_key():
+    """Load the event_key from a file if it exists."""
+    global event_key
+    if os.path.exists(event_key_file):
+        with open(event_key_file, 'r') as file:
+            event_key = file.read().strip()
+
+
+def save_event_key():
+    """Save the event_key to a file."""
+    with open(event_key_file, 'w') as file:
+        file.write(event_key)
 
 def handle_qr_data(qr_data, isSpace):
     """Function to handle QR code data when Space key is pressed."""
     #Wrap everything in a try, so if we see random data we are okay.
-    global hasQRCode
-    if hasQRCode:
-        try:
+    global hasQRCode, last_char_time
+    #Check if the space is WITHIN the QR code. If so, don't try this!
+    if (time.time() - last_char_time) > 0.1:
+        if hasQRCode:
+            #try:
             # Split the content by '%'
             sections = qr_data.split('%')
 
@@ -34,11 +49,15 @@ def handle_qr_data(qr_data, isSpace):
 
             if collection_mode == 'Objective':
                 # Extract the objective data section and split by '$'
-                objective_data = sections[1].split('$')
+                try:
+                    print(sections)
+                    objective_data = sections[1].split('$')
 
-                for element in objective_data:
-                    if element.startswith('Z'):
-                        team_number = _extract_numbers(element)
+                    for element in objective_data:
+                        if element.startswith('Z'):
+                            team_number = _extract_numbers(element)
+                except IndexError as e:
+                    messagebox.showerror("Data has no team number!" + e)
             else:
                 # Extract the team number based on the subjective collection mode
                 team_number = 'Red' if generic_data[0].startswith('F') and generic_data[0].endswith('TRUE') else 'Blue'
@@ -49,10 +68,10 @@ def handle_qr_data(qr_data, isSpace):
             hasQRCode = True
             if isSpace:  # actually save
                 save_qr_data(qr_data)
-        except Exception as e:
-            messagebox.showerror("Error", e)
-    else:
-        messagebox.showerror("Error", "No QR code detected")
+            #except Exception as e:
+            #    messagebox.showerror("Error", e)
+        else:
+            messagebox.showerror("Error", "No QR code detected")
 
 
 def _extract_numbers(string):
@@ -84,6 +103,7 @@ def save_qr_data(qr_data):
         with open(f"QRCodeOutputs/{file_name}", 'w') as file:
             file.write(f"{qr_data}\n")
     messagebox.showinfo("Success", f"QR code data saved successfully to {file_path}")
+    current_qr_data = None
 
 
 def open_qrcode_folder():
@@ -132,10 +152,9 @@ def move_local_data_to_usb():
         messagebox.showinfo("Success", "New local data copied to USB drive.")
 
 current_qr_data = ""
-frame = cv2.typing.MatLike
 def update_frame():
     """Capture a frame from the webcam, process it, and update the tkinter canvas."""
-    global current_qr_data, frame
+    global current_qr_data, hasQRCode
 
     # Capture frame-by-frame
     ret, frame = cap.read()
@@ -148,6 +167,8 @@ def update_frame():
 
     # Detect QR codes
     decoded_objects = decode(gray)
+    qr_type = None
+    qr_data = None
     for obj in decoded_objects:
         # Draw a rectangle around the QR code
         points = obj.polygon
@@ -162,14 +183,20 @@ def update_frame():
         # Decode the QR code data
         qr_data = obj.data.decode('utf-8')
         qr_type = obj.type
-        handle_qr_data(qr_data, False)
-        text = f"{qr_type}: {file_name}"
+
 
         # Update the current QR code data
         current_qr_data = qr_data
+        hasQRCode = True
         # Display QR code data
-        cv2.putText(frame, text, (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
-
+    text = ""
+    if current_qr_data is not None and hasQRCode:
+        handle_qr_data(current_qr_data, False)
+        if qr_type is not None:
+            text = f"{qr_type}: {file_name}"
+        else:
+            text = f"Scanner: {file_name}"
+    cv2.putText(frame, text, (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     pil_image = Image.fromarray(frame_rgb)
     tk_image = ImageTk.PhotoImage(image=pil_image)
@@ -197,6 +224,7 @@ def open_settings():
     def save_settings():
         global event_key
         event_key = event_key_entry.get()
+        save_event_key()
         settings_window.destroy()
 
     settings_window = tk.Toplevel()
@@ -237,7 +265,6 @@ def on_key_press(event):
     # Check if the character is part of a continuous QR code scan (within 50 ms)
     if now - last_char_time < 0.1:
         QRtext += char  # Append to QR code text
-        print(QRtext)
     else:
         QRtext = char  # Reset QR code text if time exceeds threshold
 
@@ -245,14 +272,15 @@ def on_key_press(event):
 
     # If Enter key is pressed, assume QR code is complete
     if event.keysym == 'Return':
-        if len(QRtext) < 5:
+        if len(QRtext) > 15:
+            print("GOT QR CODE! " + QRtext)
             hasQRCode = True
             current_qr_data = QRtext  # Set current QR data to display
             QRtext = ""  # Reset QR text for next scan
 
 def main():
     global cap, root, canvas, current_qr_data, usb_drive_checkbox
-
+    load_event_key()
     # Open the webcam
     cap = cv2.VideoCapture(0)
     cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
@@ -287,11 +315,12 @@ def main():
     move_data_button = tk.Button(root, text="Move Local Data To USB", command=move_local_data_to_usb)
     move_data_button.place(x=10, y=640, anchor='sw')
 
-    update_frame()
 
     root.bind('<space>', lambda event: handle_qr_data(current_qr_data, True) if current_qr_data else None)
     #read all input for QRCode
     root.bind('<Key>', on_key_press)
+    update_frame()
+
     root.mainloop()
 
 

@@ -1,3 +1,5 @@
+import time
+
 import cv2
 import numpy as np
 from pyzbar.pyzbar import decode
@@ -15,37 +17,42 @@ file_name = ""
 def handle_qr_data(qr_data, isSpace):
     """Function to handle QR code data when Space key is pressed."""
     #Wrap everything in a try, so if we see random data we are okay.
-    try:
-        # Split the content by '%'
-        sections = qr_data.split('%')
+    global hasQRCode
+    if hasQRCode:
+        try:
+            # Split the content by '%'
+            sections = qr_data.split('%')
 
-        # Extract the generic data section and split by '$'
-        generic_data = sections[0].split('$')
+            # Extract the generic data section and split by '$'
+            generic_data = sections[0].split('$')
 
-        # Extract the matchId from the generic data
-        match_id = _extract_numbers(next((element for element in generic_data if element.startswith('B')), ''))
+            # Extract the matchId from the generic data
+            match_id = _extract_numbers(next((element for element in generic_data if element.startswith('B')), ''))
 
-        team_number = ''
-        collection_mode = 'Subjective' if qr_data.startswith('*') else 'Objective'
+            team_number = ''
+            collection_mode = 'Subjective' if qr_data.startswith('*') else 'Objective'
 
-        if collection_mode == 'Objective':
-            # Extract the objective data section and split by '$'
-            objective_data = sections[1].split('$')
+            if collection_mode == 'Objective':
+                # Extract the objective data section and split by '$'
+                objective_data = sections[1].split('$')
 
-            for element in objective_data:
-                if element.startswith('Z'):
-                    team_number = _extract_numbers(element)
-        else:
-            # Extract the team number based on the subjective collection mode
-            team_number = 'Red' if generic_data[0].startswith('F') and generic_data[0].endswith('TRUE') else 'Blue'
+                for element in objective_data:
+                    if element.startswith('Z'):
+                        team_number = _extract_numbers(element)
+            else:
+                # Extract the team number based on the subjective collection mode
+                team_number = 'Red' if generic_data[0].startswith('F') and generic_data[0].endswith('TRUE') else 'Blue'
 
-        # Update fileName and fileContent
-        global file_name
-        file_name = f'{match_id}_{team_number}_{event_key}_{collection_mode}.txt'
-        if isSpace:  # actually save
-            save_qr_data(qr_data)
-    except Exception as e:
-        messagebox.showerror("Error", e)
+            # Update fileName and fileContent
+            global file_name
+            file_name = f'{match_id}_{team_number}_{event_key}_{collection_mode}.txt'
+            hasQRCode = True
+            if isSpace:  # actually save
+                save_qr_data(qr_data)
+        except Exception as e:
+            messagebox.showerror("Error", e)
+    else:
+        messagebox.showerror("Error", "No QR code detected")
 
 
 def _extract_numbers(string):
@@ -54,7 +61,8 @@ def _extract_numbers(string):
 
 def save_qr_data(qr_data):
     """Save QR code data to the appropriate file based on drive availability."""
-    global file_name
+    global file_name, hasQRCode
+    hasQRCode = False
     if event_key == "":
         messagebox.showerror("Error", f"FIRST SET EVENT KEY IN SETTINGS!")
         return
@@ -123,10 +131,11 @@ def move_local_data_to_usb():
     if something_moved:
         messagebox.showinfo("Success", "New local data copied to USB drive.")
 
-
+current_qr_data = ""
+frame = cv2.typing.MatLike
 def update_frame():
     """Capture a frame from the webcam, process it, and update the tkinter canvas."""
-    global current_qr_data
+    global current_qr_data, frame
 
     # Capture frame-by-frame
     ret, frame = cap.read()
@@ -158,7 +167,6 @@ def update_frame():
 
         # Update the current QR code data
         current_qr_data = qr_data
-
         # Display QR code data
         cv2.putText(frame, text, (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
@@ -214,6 +222,33 @@ def end_fullscreen(event=None):
     root.attributes('-fullscreen', False)
     root.bind('<F11>', toggle_fullscreen)
 fullscreen = False
+QRtext = ""
+last_char_time = time.time()
+hasQRCode = False
+
+
+# Function to process each keypress as part of QR code scan
+def on_key_press(event):
+    global QRtext, last_char_time, hasQRCode, current_qr_data
+
+    now = time.time()
+    char = event.char  # Get the character from the event
+
+    # Check if the character is part of a continuous QR code scan (within 50 ms)
+    if now - last_char_time < 0.1:
+        QRtext += char  # Append to QR code text
+        print(QRtext)
+    else:
+        QRtext = char  # Reset QR code text if time exceeds threshold
+
+    last_char_time = now
+
+    # If Enter key is pressed, assume QR code is complete
+    if event.keysym == 'Return':
+        if len(QRtext) < 5:
+            hasQRCode = True
+            current_qr_data = QRtext  # Set current QR data to display
+            QRtext = ""  # Reset QR text for next scan
 
 def main():
     global cap, root, canvas, current_qr_data, usb_drive_checkbox
@@ -255,7 +290,8 @@ def main():
     update_frame()
 
     root.bind('<space>', lambda event: handle_qr_data(current_qr_data, True) if current_qr_data else None)
-
+    #read all input for QRCode
+    root.bind('<Key>', on_key_press)
     root.mainloop()
 
 

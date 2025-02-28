@@ -1,0 +1,2206 @@
+{
+    "1": {
+        "match_number": "1",
+        "teams": [
+            {
+                "number": "461",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "red"
+            },
+            {
+                "number": "4272",
+                "color": "red"
+            },
+            {
+                "number": "6498",
+                "color": "blue"
+            },
+            {
+                "number": "45",
+                "color": "blue"
+            },
+            {
+                "number": "3176",
+                "color": "blue"
+            }
+        ]
+    },
+    "2": {
+        "match_number": "2",
+        "teams": [
+            {
+                "number": "1747",
+                "color": "red"
+            },
+            {
+                "number": "7617",
+                "color": "red"
+            },
+            {
+                "number": "4926",
+                "color": "red"
+            },
+            {
+                "number": "829",
+                "color": "blue"
+            },
+            {
+                "number": "1741",
+                "color": "blue"
+            },
+            {
+                "number": "8103",
+                "color": "blue"
+            }
+        ]
+    },
+    "3": {
+        "match_number": "3",
+        "teams": [
+            {
+                "number": "135",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "red"
+            },
+            {
+                "number": "292",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "blue"
+            },
+            {
+                "number": "9431",
+                "color": "blue"
+            },
+            {
+                "number": "1024",
+                "color": "blue"
+            }
+        ]
+    },
+    "10": {
+        "match_number": "10",
+        "teams": [
+            {
+                "number": "1720",
+                "color": "red"
+            },
+            {
+                "number": "135",
+                "color": "red"
+            },
+            {
+                "number": "1024",
+                "color": "red"
+            },
+            {
+                "number": "868",
+                "color": "blue"
+            },
+            {
+                "number": "3147",
+                "color": "blue"
+            },
+            {
+                "number": "4272",
+                "color": "blue"
+            }
+        ]
+    },
+    "11": {
+        "match_number": "11",
+        "teams": [
+            {
+                "number": "461",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "red"
+            },
+            {
+                "number": "4982",
+                "color": "red"
+            },
+            {
+                "number": "7457",
+                "color": "blue"
+            },
+            {
+                "number": "3494",
+                "color": "blue"
+            },
+            {
+                "number": "4926",
+                "color": "blue"
+            }
+        ]
+    },
+    "12": {
+        "match_number": "12",
+        "teams": [
+            {
+                "number": "8103",
+                "color": "red"
+            },
+            {
+                "number": "45",
+                "color": "red"
+            },
+            {
+                "number": "5188",
+                "color": "red"
+            },
+            {
+                "number": "6721",
+                "color": "blue"
+            },
+            {
+                "number": "8430",
+                "color": "blue"
+            },
+            {
+                "number": "1646",
+                "color": "blue"
+            }
+        ]
+    },
+    "13": {
+        "match_number": "13",
+        "teams": [
+            {
+                "number": "7617",
+                "color": "red"
+            },
+            {
+                "number": "7454",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "red"
+            },
+            {
+                "number": "7657",
+                "color": "blue"
+            },
+            {
+                "number": "1747",
+                "color": "blue"
+            },
+            {
+                "number": "3176",
+                "color": "blue"
+            }
+        ]
+    },
+    "14": {
+        "match_number": "14",
+        "teams": [
+            {
+                "number": "4272",
+                "color": "red"
+            },
+            {
+                "number": "234",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "blue"
+            },
+            {
+                "number": "868",
+                "color": "blue"
+            },
+            {
+                "number": "1741",
+                "color": "blue"
+            }
+        ]
+    },
+    "15": {
+        "match_number": "15",
+        "teams": [
+            {
+                "number": "1720",
+                "color": "red"
+            },
+            {
+                "number": "3147",
+                "color": "red"
+            },
+            {
+                "number": "5010",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "blue"
+            },
+            {
+                "number": "3865",
+                "color": "blue"
+            },
+            {
+                "number": "135",
+                "color": "blue"
+            }
+        ]
+    },
+    "16": {
+        "match_number": "16",
+        "teams": [
+            {
+                "number": "1018",
+                "color": "red"
+            },
+            {
+                "number": "1646",
+                "color": "red"
+            },
+            {
+                "number": "45",
+                "color": "red"
+            },
+            {
+                "number": "6498",
+                "color": "blue"
+            },
+            {
+                "number": "7457",
+                "color": "blue"
+            },
+            {
+                "number": "4982",
+                "color": "blue"
+            }
+        ]
+    },
+    "17": {
+        "match_number": "17",
+        "teams": [
+            {
+                "number": "4926",
+                "color": "red"
+            },
+            {
+                "number": "8430",
+                "color": "red"
+            },
+            {
+                "number": "7657",
+                "color": "red"
+            },
+            {
+                "number": "1024",
+                "color": "blue"
+            },
+            {
+                "number": "6721",
+                "color": "blue"
+            },
+            {
+                "number": "1501",
+                "color": "blue"
+            }
+        ]
+    },
+    "18": {
+        "match_number": "18",
+        "teams": [
+            {
+                "number": "7617",
+                "color": "red"
+            },
+            {
+                "number": "8103",
+                "color": "red"
+            },
+            {
+                "number": "292",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "blue"
+            },
+            {
+                "number": "5188",
+                "color": "blue"
+            },
+            {
+                "number": "2197",
+                "color": "blue"
+            }
+        ]
+    },
+    "19": {
+        "match_number": "19",
+        "teams": [
+            {
+                "number": "3176",
+                "color": "red"
+            },
+            {
+                "number": "3494",
+                "color": "red"
+            },
+            {
+                "number": "461",
+                "color": "red"
+            },
+            {
+                "number": "9431",
+                "color": "blue"
+            },
+            {
+                "number": "7454",
+                "color": "blue"
+            },
+            {
+                "number": "829",
+                "color": "blue"
+            }
+        ]
+    },
+    "20": {
+        "match_number": "20",
+        "teams": [
+            {
+                "number": "45",
+                "color": "red"
+            },
+            {
+                "number": "1747",
+                "color": "red"
+            },
+            {
+                "number": "868",
+                "color": "red"
+            },
+            {
+                "number": "135",
+                "color": "blue"
+            },
+            {
+                "number": "5010",
+                "color": "blue"
+            },
+            {
+                "number": "1018",
+                "color": "blue"
+            }
+        ]
+    },
+    "21": {
+        "match_number": "21",
+        "teams": [
+            {
+                "number": "1646",
+                "color": "red"
+            },
+            {
+                "number": "3147",
+                "color": "red"
+            },
+            {
+                "number": "4982",
+                "color": "red"
+            },
+            {
+                "number": "1501",
+                "color": "blue"
+            },
+            {
+                "number": "7457",
+                "color": "blue"
+            },
+            {
+                "number": "1720",
+                "color": "blue"
+            }
+        ]
+    },
+    "22": {
+        "match_number": "22",
+        "teams": [
+            {
+                "number": "292",
+                "color": "red"
+            },
+            {
+                "number": "234",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "red"
+            },
+            {
+                "number": "8103",
+                "color": "blue"
+            },
+            {
+                "number": "7657",
+                "color": "blue"
+            },
+            {
+                "number": "5484",
+                "color": "blue"
+            }
+        ]
+    },
+    "23": {
+        "match_number": "23",
+        "teams": [
+            {
+                "number": "3176",
+                "color": "red"
+            },
+            {
+                "number": "5188",
+                "color": "red"
+            },
+            {
+                "number": "1741",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "blue"
+            },
+            {
+                "number": "3494",
+                "color": "blue"
+            },
+            {
+                "number": "1024",
+                "color": "blue"
+            }
+        ]
+    },
+    "24": {
+        "match_number": "24",
+        "teams": [
+            {
+                "number": "5402",
+                "color": "red"
+            },
+            {
+                "number": "2197",
+                "color": "red"
+            },
+            {
+                "number": "7617",
+                "color": "red"
+            },
+            {
+                "number": "6721",
+                "color": "blue"
+            },
+            {
+                "number": "7454",
+                "color": "blue"
+            },
+            {
+                "number": "4926",
+                "color": "blue"
+            }
+        ]
+    },
+    "25": {
+        "match_number": "25",
+        "teams": [
+            {
+                "number": "829",
+                "color": "red"
+            },
+            {
+                "number": "6498",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "red"
+            },
+            {
+                "number": "461",
+                "color": "blue"
+            },
+            {
+                "number": "4272",
+                "color": "blue"
+            },
+            {
+                "number": "8430",
+                "color": "blue"
+            }
+        ]
+    },
+    "26": {
+        "match_number": "26",
+        "teams": [
+            {
+                "number": "9431",
+                "color": "red"
+            },
+            {
+                "number": "1501",
+                "color": "red"
+            },
+            {
+                "number": "1646",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "blue"
+            },
+            {
+                "number": "1747",
+                "color": "blue"
+            },
+            {
+                "number": "135",
+                "color": "blue"
+            }
+        ]
+    },
+    "27": {
+        "match_number": "27",
+        "teams": [
+            {
+                "number": "234",
+                "color": "red"
+            },
+            {
+                "number": "8103",
+                "color": "red"
+            },
+            {
+                "number": "3147",
+                "color": "red"
+            },
+            {
+                "number": "3176",
+                "color": "blue"
+            },
+            {
+                "number": "5484",
+                "color": "blue"
+            },
+            {
+                "number": "45",
+                "color": "blue"
+            }
+        ]
+    },
+    "28": {
+        "match_number": "28",
+        "teams": [
+            {
+                "number": "1741",
+                "color": "red"
+            },
+            {
+                "number": "4926",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "red"
+            },
+            {
+                "number": "2197",
+                "color": "blue"
+            },
+            {
+                "number": "1720",
+                "color": "blue"
+            },
+            {
+                "number": "7454",
+                "color": "blue"
+            }
+        ]
+    },
+    "29": {
+        "match_number": "29",
+        "teams": [
+            {
+                "number": "8430",
+                "color": "red"
+            },
+            {
+                "number": "4982",
+                "color": "red"
+            },
+            {
+                "number": "3494",
+                "color": "red"
+            },
+            {
+                "number": "7617",
+                "color": "blue"
+            },
+            {
+                "number": "6498",
+                "color": "blue"
+            },
+            {
+                "number": "4272",
+                "color": "blue"
+            }
+        ]
+    },
+    "30": {
+        "match_number": "30",
+        "teams": [
+            {
+                "number": "7657",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "red"
+            },
+            {
+                "number": "7457",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "blue"
+            },
+            {
+                "number": "868",
+                "color": "blue"
+            },
+            {
+                "number": "829",
+                "color": "blue"
+            }
+        ]
+    },
+    "31": {
+        "match_number": "31",
+        "teams": [
+            {
+                "number": "5188",
+                "color": "red"
+            },
+            {
+                "number": "1018",
+                "color": "red"
+            },
+            {
+                "number": "1024",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "blue"
+            },
+            {
+                "number": "5010",
+                "color": "blue"
+            },
+            {
+                "number": "9431",
+                "color": "blue"
+            }
+        ]
+    },
+    "32": {
+        "match_number": "32",
+        "teams": [
+            {
+                "number": "292",
+                "color": "red"
+            },
+            {
+                "number": "6721",
+                "color": "red"
+            },
+            {
+                "number": "1747",
+                "color": "red"
+            },
+            {
+                "number": "461",
+                "color": "blue"
+            },
+            {
+                "number": "3940",
+                "color": "blue"
+            },
+            {
+                "number": "3147",
+                "color": "blue"
+            }
+        ]
+    },
+    "33": {
+        "match_number": "33",
+        "teams": [
+            {
+                "number": "3494",
+                "color": "red"
+            },
+            {
+                "number": "8103",
+                "color": "red"
+            },
+            {
+                "number": "4272",
+                "color": "red"
+            },
+            {
+                "number": "45",
+                "color": "blue"
+            },
+            {
+                "number": "9491",
+                "color": "blue"
+            },
+            {
+                "number": "1501",
+                "color": "blue"
+            }
+        ]
+    },
+    "34": {
+        "match_number": "34",
+        "teams": [
+            {
+                "number": "7454",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "red"
+            },
+            {
+                "number": "6498",
+                "color": "red"
+            },
+            {
+                "number": "135",
+                "color": "blue"
+            },
+            {
+                "number": "7617",
+                "color": "blue"
+            },
+            {
+                "number": "8430",
+                "color": "blue"
+            }
+        ]
+    },
+    "35": {
+        "match_number": "35",
+        "teams": [
+            {
+                "number": "1741",
+                "color": "red"
+            },
+            {
+                "number": "2197",
+                "color": "red"
+            },
+            {
+                "number": "234",
+                "color": "red"
+            },
+            {
+                "number": "7657",
+                "color": "blue"
+            },
+            {
+                "number": "1646",
+                "color": "blue"
+            },
+            {
+                "number": "5188",
+                "color": "blue"
+            }
+        ]
+    },
+    "36": {
+        "match_number": "36",
+        "teams": [
+            {
+                "number": "5010",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "red"
+            },
+            {
+                "number": "1024",
+                "color": "blue"
+            },
+            {
+                "number": "829",
+                "color": "blue"
+            },
+            {
+                "number": "4982",
+                "color": "blue"
+            }
+        ]
+    },
+    "37": {
+        "match_number": "37",
+        "teams": [
+            {
+                "number": "9431",
+                "color": "red"
+            },
+            {
+                "number": "7457",
+                "color": "red"
+            },
+            {
+                "number": "868",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "blue"
+            },
+            {
+                "number": "4926",
+                "color": "blue"
+            },
+            {
+                "number": "3176",
+                "color": "blue"
+            }
+        ]
+    },
+    "38": {
+        "match_number": "38",
+        "teams": [
+            {
+                "number": "461",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "red"
+            },
+            {
+                "number": "6721",
+                "color": "red"
+            },
+            {
+                "number": "292",
+                "color": "blue"
+            },
+            {
+                "number": "1720",
+                "color": "blue"
+            },
+            {
+                "number": "1018",
+                "color": "blue"
+            }
+        ]
+    },
+    "39": {
+        "match_number": "39",
+        "teams": [
+            {
+                "number": "3494",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "red"
+            },
+            {
+                "number": "2197",
+                "color": "red"
+            },
+            {
+                "number": "8430",
+                "color": "blue"
+            },
+            {
+                "number": "3147",
+                "color": "blue"
+            },
+            {
+                "number": "45",
+                "color": "blue"
+            }
+        ]
+    },
+    "4": {
+        "match_number": "4",
+        "teams": [
+            {
+                "number": "4982",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "red"
+            },
+            {
+                "number": "7454",
+                "color": "red"
+            },
+            {
+                "number": "3147",
+                "color": "blue"
+            },
+            {
+                "number": "5402",
+                "color": "blue"
+            },
+            {
+                "number": "5188",
+                "color": "blue"
+            }
+        ]
+    },
+    "40": {
+        "match_number": "40",
+        "teams": [
+            {
+                "number": "1747",
+                "color": "red"
+            },
+            {
+                "number": "7454",
+                "color": "red"
+            },
+            {
+                "number": "1741",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "blue"
+            },
+            {
+                "number": "4982",
+                "color": "blue"
+            },
+            {
+                "number": "4272",
+                "color": "blue"
+            }
+        ]
+    },
+    "41": {
+        "match_number": "41",
+        "teams": [
+            {
+                "number": "1646",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "red"
+            },
+            {
+                "number": "135",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "blue"
+            },
+            {
+                "number": "3176",
+                "color": "blue"
+            },
+            {
+                "number": "8103",
+                "color": "blue"
+            }
+        ]
+    },
+    "42": {
+        "match_number": "42",
+        "teams": [
+            {
+                "number": "6721",
+                "color": "red"
+            },
+            {
+                "number": "9431",
+                "color": "red"
+            },
+            {
+                "number": "1720",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "blue"
+            },
+            {
+                "number": "7617",
+                "color": "blue"
+            },
+            {
+                "number": "829",
+                "color": "blue"
+            }
+        ]
+    },
+    "43": {
+        "match_number": "43",
+        "teams": [
+            {
+                "number": "1024",
+                "color": "red"
+            },
+            {
+                "number": "7457",
+                "color": "red"
+            },
+            {
+                "number": "461",
+                "color": "red"
+            },
+            {
+                "number": "292",
+                "color": "blue"
+            },
+            {
+                "number": "7657",
+                "color": "blue"
+            },
+            {
+                "number": "1501",
+                "color": "blue"
+            }
+        ]
+    },
+    "44": {
+        "match_number": "44",
+        "teams": [
+            {
+                "number": "6498",
+                "color": "red"
+            },
+            {
+                "number": "5188",
+                "color": "red"
+            },
+            {
+                "number": "5010",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "blue"
+            },
+            {
+                "number": "4926",
+                "color": "blue"
+            },
+            {
+                "number": "234",
+                "color": "blue"
+            }
+        ]
+    },
+    "45": {
+        "match_number": "45",
+        "teams": [
+            {
+                "number": "135",
+                "color": "red"
+            },
+            {
+                "number": "868",
+                "color": "red"
+            },
+            {
+                "number": "8103",
+                "color": "red"
+            },
+            {
+                "number": "1018",
+                "color": "blue"
+            },
+            {
+                "number": "4982",
+                "color": "blue"
+            },
+            {
+                "number": "1741",
+                "color": "blue"
+            }
+        ]
+    },
+    "46": {
+        "match_number": "46",
+        "teams": [
+            {
+                "number": "7454",
+                "color": "red"
+            },
+            {
+                "number": "45",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "red"
+            },
+            {
+                "number": "1747",
+                "color": "blue"
+            },
+            {
+                "number": "829",
+                "color": "blue"
+            },
+            {
+                "number": "3494",
+                "color": "blue"
+            }
+        ]
+    },
+    "47": {
+        "match_number": "47",
+        "teams": [
+            {
+                "number": "2197",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "red"
+            },
+            {
+                "number": "6721",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "blue"
+            },
+            {
+                "number": "1720",
+                "color": "blue"
+            },
+            {
+                "number": "3487",
+                "color": "blue"
+            }
+        ]
+    },
+    "48": {
+        "match_number": "48",
+        "teams": [
+            {
+                "number": "234",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "red"
+            },
+            {
+                "number": "1646",
+                "color": "red"
+            },
+            {
+                "number": "8430",
+                "color": "blue"
+            },
+            {
+                "number": "1024",
+                "color": "blue"
+            },
+            {
+                "number": "292",
+                "color": "blue"
+            }
+        ]
+    },
+    "49": {
+        "match_number": "49",
+        "teams": [
+            {
+                "number": "7457",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "red"
+            },
+            {
+                "number": "3147",
+                "color": "red"
+            },
+            {
+                "number": "4926",
+                "color": "blue"
+            },
+            {
+                "number": "461",
+                "color": "blue"
+            },
+            {
+                "number": "6498",
+                "color": "blue"
+            }
+        ]
+    },
+    "5": {
+        "match_number": "5",
+        "teams": [
+            {
+                "number": "1018",
+                "color": "red"
+            },
+            {
+                "number": "8430",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "red"
+            },
+            {
+                "number": "234",
+                "color": "blue"
+            },
+            {
+                "number": "461",
+                "color": "blue"
+            },
+            {
+                "number": "868",
+                "color": "blue"
+            }
+        ]
+    },
+    "50": {
+        "match_number": "50",
+        "teams": [
+            {
+                "number": "5188",
+                "color": "red"
+            },
+            {
+                "number": "7617",
+                "color": "red"
+            },
+            {
+                "number": "9431",
+                "color": "red"
+            },
+            {
+                "number": "4272",
+                "color": "blue"
+            },
+            {
+                "number": "5010",
+                "color": "blue"
+            },
+            {
+                "number": "7657",
+                "color": "blue"
+            }
+        ]
+    },
+    "51": {
+        "match_number": "51",
+        "teams": [
+            {
+                "number": "1501",
+                "color": "red"
+            },
+            {
+                "number": "3176",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "red"
+            },
+            {
+                "number": "868",
+                "color": "blue"
+            },
+            {
+                "number": "1018",
+                "color": "blue"
+            },
+            {
+                "number": "3494",
+                "color": "blue"
+            }
+        ]
+    },
+    "52": {
+        "match_number": "52",
+        "teams": [
+            {
+                "number": "1741",
+                "color": "red"
+            },
+            {
+                "number": "1024",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "red"
+            },
+            {
+                "number": "4982",
+                "color": "blue"
+            },
+            {
+                "number": "45",
+                "color": "blue"
+            },
+            {
+                "number": "6721",
+                "color": "blue"
+            }
+        ]
+    },
+    "53": {
+        "match_number": "53",
+        "teams": [
+            {
+                "number": "5484",
+                "color": "red"
+            },
+            {
+                "number": "6498",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "red"
+            },
+            {
+                "number": "8103",
+                "color": "blue"
+            },
+            {
+                "number": "1646",
+                "color": "blue"
+            },
+            {
+                "number": "1747",
+                "color": "blue"
+            }
+        ]
+    },
+    "54": {
+        "match_number": "54",
+        "teams": [
+            {
+                "number": "7617",
+                "color": "red"
+            },
+            {
+                "number": "7657",
+                "color": "red"
+            },
+            {
+                "number": "234",
+                "color": "red"
+            },
+            {
+                "number": "3147",
+                "color": "blue"
+            },
+            {
+                "number": "292",
+                "color": "blue"
+            },
+            {
+                "number": "2197",
+                "color": "blue"
+            }
+        ]
+    },
+    "55": {
+        "match_number": "55",
+        "teams": [
+            {
+                "number": "4926",
+                "color": "red"
+            },
+            {
+                "number": "4272",
+                "color": "red"
+            },
+            {
+                "number": "829",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "blue"
+            },
+            {
+                "number": "1018",
+                "color": "blue"
+            },
+            {
+                "number": "9431",
+                "color": "blue"
+            }
+        ]
+    },
+    "56": {
+        "match_number": "56",
+        "teams": [
+            {
+                "number": "8430",
+                "color": "red"
+            },
+            {
+                "number": "5010",
+                "color": "red"
+            },
+            {
+                "number": "7457",
+                "color": "red"
+            },
+            {
+                "number": "3176",
+                "color": "blue"
+            },
+            {
+                "number": "135",
+                "color": "blue"
+            },
+            {
+                "number": "7454",
+                "color": "blue"
+            }
+        ]
+    },
+    "57": {
+        "match_number": "57",
+        "teams": [
+            {
+                "number": "1720",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "red"
+            },
+            {
+                "number": "868",
+                "color": "red"
+            },
+            {
+                "number": "1501",
+                "color": "blue"
+            },
+            {
+                "number": "461",
+                "color": "blue"
+            },
+            {
+                "number": "5188",
+                "color": "blue"
+            }
+        ]
+    },
+    "58": {
+        "match_number": "58",
+        "teams": [
+            {
+                "number": "3147",
+                "color": "red"
+            },
+            {
+                "number": "7657",
+                "color": "red"
+            },
+            {
+                "number": "6498",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "blue"
+            },
+            {
+                "number": "8103",
+                "color": "blue"
+            },
+            {
+                "number": "3940",
+                "color": "blue"
+            }
+        ]
+    },
+    "59": {
+        "match_number": "59",
+        "teams": [
+            {
+                "number": "2197",
+                "color": "red"
+            },
+            {
+                "number": "4272",
+                "color": "red"
+            },
+            {
+                "number": "1018",
+                "color": "red"
+            },
+            {
+                "number": "4926",
+                "color": "blue"
+            },
+            {
+                "number": "1024",
+                "color": "blue"
+            },
+            {
+                "number": "1646",
+                "color": "blue"
+            }
+        ]
+    },
+    "6": {
+        "match_number": "6",
+        "teams": [
+            {
+                "number": "7657",
+                "color": "red"
+            },
+            {
+                "number": "1720",
+                "color": "red"
+            },
+            {
+                "number": "3494",
+                "color": "red"
+            },
+            {
+                "number": "4272",
+                "color": "blue"
+            },
+            {
+                "number": "6721",
+                "color": "blue"
+            },
+            {
+                "number": "7457",
+                "color": "blue"
+            }
+        ]
+    },
+    "60": {
+        "match_number": "60",
+        "teams": [
+            {
+                "number": "1747",
+                "color": "red"
+            },
+            {
+                "number": "9431",
+                "color": "red"
+            },
+            {
+                "number": "8430",
+                "color": "red"
+            },
+            {
+                "number": "7457",
+                "color": "blue"
+            },
+            {
+                "number": "1741",
+                "color": "blue"
+            },
+            {
+                "number": "3865",
+                "color": "blue"
+            }
+        ]
+    },
+    "61": {
+        "match_number": "61",
+        "teams": [
+            {
+                "number": "45",
+                "color": "red"
+            },
+            {
+                "number": "135",
+                "color": "red"
+            },
+            {
+                "number": "461",
+                "color": "red"
+            },
+            {
+                "number": "234",
+                "color": "blue"
+            },
+            {
+                "number": "5188",
+                "color": "blue"
+            },
+            {
+                "number": "1720",
+                "color": "blue"
+            }
+        ]
+    },
+    "62": {
+        "match_number": "62",
+        "teams": [
+            {
+                "number": "5010",
+                "color": "red"
+            },
+            {
+                "number": "868",
+                "color": "red"
+            },
+            {
+                "number": "1501",
+                "color": "red"
+            },
+            {
+                "number": "3494",
+                "color": "blue"
+            },
+            {
+                "number": "6721",
+                "color": "blue"
+            },
+            {
+                "number": "7617",
+                "color": "blue"
+            }
+        ]
+    },
+    "63": {
+        "match_number": "63",
+        "teams": [
+            {
+                "number": "829",
+                "color": "red"
+            },
+            {
+                "number": "292",
+                "color": "red"
+            },
+            {
+                "number": "3176",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "blue"
+            },
+            {
+                "number": "4982",
+                "color": "blue"
+            },
+            {
+                "number": "5402",
+                "color": "blue"
+            }
+        ]
+    },
+    "64": {
+        "match_number": "64",
+        "teams": [
+            {
+                "number": "7454",
+                "color": "red"
+            },
+            {
+                "number": "1018",
+                "color": "red"
+            },
+            {
+                "number": "7657",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "blue"
+            },
+            {
+                "number": "1741",
+                "color": "blue"
+            },
+            {
+                "number": "8430",
+                "color": "blue"
+            }
+        ]
+    },
+    "65": {
+        "match_number": "65",
+        "teams": [
+            {
+                "number": "1024",
+                "color": "red"
+            },
+            {
+                "number": "4272",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "red"
+            },
+            {
+                "number": "5188",
+                "color": "blue"
+            },
+            {
+                "number": "1747",
+                "color": "blue"
+            },
+            {
+                "number": "7457",
+                "color": "blue"
+            }
+        ]
+    },
+    "66": {
+        "match_number": "66",
+        "teams": [
+            {
+                "number": "5010",
+                "color": "red"
+            },
+            {
+                "number": "461",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "red"
+            },
+            {
+                "number": "1646",
+                "color": "blue"
+            },
+            {
+                "number": "3940",
+                "color": "blue"
+            },
+            {
+                "number": "7617",
+                "color": "blue"
+            }
+        ]
+    },
+    "67": {
+        "match_number": "67",
+        "teams": [
+            {
+                "number": "868",
+                "color": "red"
+            },
+            {
+                "number": "2197",
+                "color": "red"
+            },
+            {
+                "number": "3176",
+                "color": "red"
+            },
+            {
+                "number": "1720",
+                "color": "blue"
+            },
+            {
+                "number": "829",
+                "color": "blue"
+            },
+            {
+                "number": "45",
+                "color": "blue"
+            }
+        ]
+    },
+    "68": {
+        "match_number": "68",
+        "teams": [
+            {
+                "number": "3147",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "red"
+            },
+            {
+                "number": "6721",
+                "color": "red"
+            },
+            {
+                "number": "9431",
+                "color": "blue"
+            },
+            {
+                "number": "234",
+                "color": "blue"
+            },
+            {
+                "number": "6498",
+                "color": "blue"
+            }
+        ]
+    },
+    "69": {
+        "match_number": "69",
+        "teams": [
+            {
+                "number": "4982",
+                "color": "red"
+            },
+            {
+                "number": "4926",
+                "color": "red"
+            },
+            {
+                "number": "135",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "blue"
+            },
+            {
+                "number": "3494",
+                "color": "blue"
+            },
+            {
+                "number": "5484",
+                "color": "blue"
+            }
+        ]
+    },
+    "7": {
+        "match_number": "7",
+        "teams": [
+            {
+                "number": "45",
+                "color": "red"
+            },
+            {
+                "number": "1741",
+                "color": "red"
+            },
+            {
+                "number": "9431",
+                "color": "red"
+            },
+            {
+                "number": "1646",
+                "color": "blue"
+            },
+            {
+                "number": "6498",
+                "color": "blue"
+            },
+            {
+                "number": "292",
+                "color": "blue"
+            }
+        ]
+    },
+    "70": {
+        "match_number": "70",
+        "teams": [
+            {
+                "number": "8103",
+                "color": "red"
+            },
+            {
+                "number": "1501",
+                "color": "red"
+            },
+            {
+                "number": "3865",
+                "color": "red"
+            },
+            {
+                "number": "7454",
+                "color": "blue"
+            },
+            {
+                "number": "292",
+                "color": "blue"
+            },
+            {
+                "number": "461",
+                "color": "blue"
+            }
+        ]
+    },
+    "71": {
+        "match_number": "71",
+        "teams": [
+            {
+                "number": "5188",
+                "color": "red"
+            },
+            {
+                "number": "8430",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "red"
+            },
+            {
+                "number": "7457",
+                "color": "blue"
+            },
+            {
+                "number": "45",
+                "color": "blue"
+            },
+            {
+                "number": "7617",
+                "color": "blue"
+            }
+        ]
+    },
+    "72": {
+        "match_number": "72",
+        "teams": [
+            {
+                "number": "4272",
+                "color": "red"
+            },
+            {
+                "number": "3176",
+                "color": "red"
+            },
+            {
+                "number": "1720",
+                "color": "red"
+            },
+            {
+                "number": "5010",
+                "color": "blue"
+            },
+            {
+                "number": "234",
+                "color": "blue"
+            },
+            {
+                "number": "1747",
+                "color": "blue"
+            }
+        ]
+    },
+    "73": {
+        "match_number": "73",
+        "teams": [
+            {
+                "number": "6721",
+                "color": "red"
+            },
+            {
+                "number": "829",
+                "color": "red"
+            },
+            {
+                "number": "1018",
+                "color": "red"
+            },
+            {
+                "number": "1741",
+                "color": "blue"
+            },
+            {
+                "number": "135",
+                "color": "blue"
+            },
+            {
+                "number": "3147",
+                "color": "blue"
+            }
+        ]
+    },
+    "74": {
+        "match_number": "74",
+        "teams": [
+            {
+                "number": "868",
+                "color": "red"
+            },
+            {
+                "number": "1024",
+                "color": "red"
+            },
+            {
+                "number": "7657",
+                "color": "red"
+            },
+            {
+                "number": "6498",
+                "color": "blue"
+            },
+            {
+                "number": "5402",
+                "color": "blue"
+            },
+            {
+                "number": "8103",
+                "color": "blue"
+            }
+        ]
+    },
+    "75": {
+        "match_number": "75",
+        "teams": [
+            {
+                "number": "3494",
+                "color": "red"
+            },
+            {
+                "number": "1646",
+                "color": "red"
+            },
+            {
+                "number": "7454",
+                "color": "red"
+            },
+            {
+                "number": "3487",
+                "color": "blue"
+            },
+            {
+                "number": "292",
+                "color": "blue"
+            },
+            {
+                "number": "4926",
+                "color": "blue"
+            }
+        ]
+    },
+    "76": {
+        "match_number": "76",
+        "teams": [
+            {
+                "number": "4982",
+                "color": "red"
+            },
+            {
+                "number": "1501",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "red"
+            },
+            {
+                "number": "2197",
+                "color": "blue"
+            },
+            {
+                "number": "9431",
+                "color": "blue"
+            },
+            {
+                "number": "9491",
+                "color": "blue"
+            }
+        ]
+    },
+    "8": {
+        "match_number": "8",
+        "teams": [
+            {
+                "number": "829",
+                "color": "red"
+            },
+            {
+                "number": "3940",
+                "color": "red"
+            },
+            {
+                "number": "5402",
+                "color": "red"
+            },
+            {
+                "number": "5484",
+                "color": "blue"
+            },
+            {
+                "number": "2197",
+                "color": "blue"
+            },
+            {
+                "number": "5010",
+                "color": "blue"
+            }
+        ]
+    },
+    "9": {
+        "match_number": "9",
+        "teams": [
+            {
+                "number": "1018",
+                "color": "red"
+            },
+            {
+                "number": "9491",
+                "color": "red"
+            },
+            {
+                "number": "1747",
+                "color": "red"
+            },
+            {
+                "number": "1501",
+                "color": "blue"
+            },
+            {
+                "number": "3487",
+                "color": "blue"
+            },
+            {
+                "number": "234",
+                "color": "blue"
+            }
+        ]
+    }
+}

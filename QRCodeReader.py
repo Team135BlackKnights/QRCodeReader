@@ -60,7 +60,18 @@ def handle_qr_data(qr_data, isSpace):
                     messagebox.showerror("Data has no team number!" + e)
             else:
                 # Extract the team number based on the subjective collection mode
-                team_number = 'Red' if generic_data[0].startswith('F') and generic_data[0].endswith('TRUE') else 'Blue'
+                print(generic_data)
+                print(generic_data[0])
+                #grab the index which starts with F and ends with TRUE, if exists, we are red
+                index = -1
+                for i in range(len(generic_data)):
+                    if generic_data[i].startswith('F') and generic_data[i].endswith('TRUE'):
+                        index = i
+                        break
+                if index == -1:
+                    team_number = 'Blue'
+                else:
+                    team_number = 'Red'
 
             # Update fileName and fileContent
             global file_name

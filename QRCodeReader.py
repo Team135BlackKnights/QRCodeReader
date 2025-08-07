@@ -64,7 +64,9 @@ def handle_qr_data(qr_data, isSpace):
 
             # Update fileName and fileContent
             global file_name
-            file_name = f'{match_id}_{team_number}_{event_key}_{collection_mode}.txt'
+            #preface with timestamp
+            timestamp = time.strftime("%Y%m%d%H%M%S")
+            file_name = f'{timestamp}_{match_id}_{team_number}_{event_key}_{collection_mode}.txt'
             hasQRCode = True
             if isSpace:  # actually save
                 save_qr_data(qr_data)
